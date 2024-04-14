@@ -1,8 +1,11 @@
-count = 0
-while True:
-    ment = input('문자를 입력하시오(종료는 . 입력): ')
-    if ment == 'a':
-        count +=1
-    if ment =='.':
-        break
-print ('문자 a의 개수: ', count)
+k = []
+sum = 0
+# 1 <= num <= 100
+for i in range (1,101):
+    if i%3==0 and i%2!=0:
+        k.append(i)
+        sum += i
+print(k)
+print('평균:', sum/len(k))
+
+
