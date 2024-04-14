@@ -1,38 +1,32 @@
-num1 = int(input('input number1:'))
-num2 = int(input('input number2:'))
-num3 = int(input('input number3:'))
-if num1 > num2 and num1 > num3:
-    print('가장 큰 수:', num1)
-#elif num2 > num1 and num2 > num3:
-    ##else:
-    #print('가장 큰 수:', num3)
-elif num2>=num3:
-    print('가장 큰 수:', num2)
-else:
-    print('가장 큰 수:', num3)
-
-#효율
-num1 = int(input('input number1:'))
-num2 = int(input('input number2:'))
-num3 = int(input('input number3:'))
-#중첩문 사용
-if num1>=num2:
-    if num1>=num3:
-        print('가장 큰 수:', num1)
-    else:
-        print('가장 큰 수:', num3)
-else:
-    if num2>=num3:
-        print('가장 큰 수:', num2)
-    else:
-        print('가장 큰 수:', num3)
+#이중for문 q1
+for i in range (1,6): #i번째줄
+    for j in range(1,i+1): # 별을 각 줄에 5개씩 생성 #==for j in range(i)
+        print('*', end='')
+    print()
 
 
 
-# 최대값을 저장할 변수 도입
-max = num1 #첫번째 변수로 시작
-if num2 > max:
-    max = num2
-elif num3 > max:
-    max = num3
-print('가장 큰수:', max)
+# 문자열*숫자
+for i in range(1,6):
+    print('*'*i)
+
+
+
+# q2 / 아래처럼 일반식을 먼저 세우기.
+# for i in ~ : i 번쨰줄
+# for 빈칸: 4 3 2 1 0 # (5-i)개
+# for 별표: 1 2 3 4 5 #i 번쨰줄에서 i개
+
+for i in range (1,6): #i번째줄
+    for j in range(5-i):
+        print(' ', end='')
+    for k in range (1,i+1):
+        print('*', end='')
+    print()
+
+'''
+알고리즘 트레이닝 사이트
+백준
+프로그래머스
+코드업
+'''

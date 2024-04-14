@@ -1,7 +1,8 @@
-numA = int(input('정수를 입력하시오: ')) #일단 나누기로 진행해보고 그 다음 연산진행방향 정하기.
-a = numA//100
-b = (numA/10)%10
-c = numA%10
-print('백의 자리수는 ', a)
-print('십의 자리수는 ', b)
-print('일의 자리수는 ', c)
+x = int(input('시작숫자 입력: '))
+y = int(input('종료숫자 입력: '))
+sum = 0
+for i in range(x,y+1):
+    if i%4==0:
+       sum +=i
+print(x,'부터 ', y,'까지의 4의 배수들의 합은 ', sum, sep='')
+print(f'{x}부터 {y}까지의 4의 배수들의 합은 {sum}')

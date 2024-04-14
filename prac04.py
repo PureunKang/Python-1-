@@ -1,8 +1,10 @@
-sign = input('신호등의 색깔 입력(R, G, Y):',)
-#if sign == 'R' or 'r' #if sign =='R' or True 로 인식해서 아무값 넣어도 다 정지! 나옴
-if sign == 'R' or sign== 'r':
-    print('정지!')
-if sign == 'G' or sign =='g':
-    print('진행~')
-if sign == 'y' or sign== 'Y':
-    print('주의')
+num = int(input('자연수 입력: '))
+for i in range (1, num+1):
+    if num%i==0:
+        print(i, end=' ')
+
+#과정
+# if ??:
+#   print(i, end=' ')
+# 이렇게 작성해 놓고, ?? 범위 어떻게 정할지 생각해 본다.
+# 나머지없이 딱 떨어지면 약수라고 하니까 그거 생각해서 범위지정!
