@@ -1,7 +1,19 @@
-sum = 0
-while True:
-    num = int(input('정수 입력: '))
-    sum += num
-    if num == 0:
-        break
-print('합계: ', sum)
+num1 = 6.0
+num2 = 2.0
+print('num1 - num2 =', num1-num2)
+num1 = 3.0
+num2 = 7.0
+print('num1 * num2 =', num1*num2)
+num1 = 7
+num2 = 3
+print('num1 / num2 =', num1/num2)
+num1 = 3.0
+num2 = 2.0
+print('num1 % num2 =', num1%num2)
+num1 = 8.0
+num2 = 3.0
+print('num1 // num2=', num1//num2)
+num1 = 7.0
+num2 = 3.0
+print('num1 ** num2=', num1**num2)
+
