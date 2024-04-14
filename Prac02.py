@@ -1,8 +1,25 @@
-k = []
-for i in range(4):
-    # name = input('이름: ')
-    # k.append(name)
-    k.append(input('이름: '))
-print(k)
+'''반복문 실습04
+Q) 주어진 정수의 약수를 모두 찾아내는 함수를 작성하시오.
+    사용자로부터 정수를 입력 받아
+    해당 정수의 약수를 모두 출력하는 함수를 만들고 실행하시오.
+    함수명: show_divisor
+    매개변수: 정수형 1개
+    리턴값: 없음
 
+    <실행화면>
+    정수입력: 8
+    1 2 4 8
+'''
 
+# 함수선언
+def show_divisor(n):
+    for i in range(1, n+1):
+        if n%i==0:
+            print(i, end=' ')
+# 입력문
+n = int(input('정수입력: '))
+
+#함수 실행
+show_divisor(n)
+
+# 함수 내부에서 n과 함수 외부의 n은 다른 변수이다.

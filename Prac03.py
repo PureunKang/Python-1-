@@ -1,11 +1,25 @@
-k = []
-sum = 0
-# 1 <= num <= 100
-for i in range (1,101):
-    if i%3==0 and i%2!=0:
-        k.append(i)
-        sum += i
-print(k)
-print('평균:', sum/len(k))
+''' CodeUp 1577
+    이 문제는 절댓값 함수를 구현하는 문제입니다.
+    정수 하나를 입력 받고 함수를 실행시켜
+    절댓값을 반환 받아 출력하는 코드를 작성하시오.
+    함수명: myabs
+    매개변수: 정수형 1개
+    리턴값: 정수형 1개
+    함수 내용 : 매개값에 대한 절댓값을 반환하는 함수 구현
 
+    ↓ 입력 예시 ↓
+    -1
 
+    ↓ 출력 예시 ↓
+    1
+'''
+# 함수 선언
+def myabs(n):
+    if n<0:
+        return -n
+    else:
+        return n
+# 입력문
+n = int(input())
+# 함수 실행 (반환해서 출력하라고 했으니까 마지막에 print)
+print(myabs(n))
