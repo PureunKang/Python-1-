@@ -1,12 +1,25 @@
-numA= float(input('첫 번째 실수를 입력하시오: ')) #정수형 컨테이너에 실수 담을 수 없어서 처음엔 float으로 시작.
-numB= float(input('두 번째 실수를 입력하시오: '))
-a = int(numA)
-b = int(numB)
-print('정수 부분의 합은', a+b)
+age = int(input('나이를 입력하세요:'))
+height = int(input('키를 입력하세요:'))
+if age>=40:
+    if height>=175:
+        print('키가 큽니다')
+    else:
+        print('키가 보통입니다.')
+# if age<40:
+#     if height>=180:
+#         print('키가 큽니다')
+#     else:
+#         print('키가 보통입니다')
+
+else:
+    if cm>=180:
+        print('키가큽니다.')
+    else:
+        print('키가 보통입니다.')
 
 
-
-numA= float(input('첫 번째 실수를 입력하시오: '))
-numB= float(input('두 번째 실수를 입력하시오: '))
-# 이후에 실수 입력이 잘되는지 확인
-print('정수 부분의 합은', int(numA)+int(numB))
+#논리연산자
+if (age>=40 and height>=175) or (age<40 and height>=180):
+    print('키가 큽니다.')
+else:
+    print('키가 보통입니다')

@@ -1,16 +1,25 @@
-'''
-Q)  주어진 딕셔너리 데이터를 다음처럼 출력해 보시오.
-    Tip) for문과 f포맷팅 문자열 이용
+price = int(input('입력: '))
+if price < 5000:
+    print('할인받는금액: 0')
+elif price >=5000 and price <10000 :
+    print('할인받는금액:', int(price*0.05))
+elif price >=10000 and price>5000 :
+    print('할인받는금액:', int(price*0.1))
+elif price >=50000 and price>10000 :
+    print('할인받는금액:', int(price*0.2))
 
-    ↓ 실행화면 ↓
-    <성인 입장료 - 8000원>
-    <청소년 입장료 - 5000원>
-    <어린이 입장료 - 3000원>
-'''
-ticket = {'성인': 8000, '청소년': 5000, '어린이': 3000}
+#답안 -> 코드를 효율적으로 짜야한다!
+price = int(input('입력: '))
+rate = 0 #할인율
 
-# for i in ticket:
-#     print('f<{i} 입장료 - {value}원)
+if price>=50000:
+    rate = 0.2
+elif price >=10000:
+    rate = 0.1
+elif price >=5000:
+    rate = 0.05
+else:
+    rate = 0
 
-for key in ticket:
-    print(f'<{key} 입장료 - {ticket[key]}원>')
+print('할인받는금액:', int(price*rate))
+

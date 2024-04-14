@@ -1,5 +1,8 @@
-a = int(input('정수를 입력하시오: '))
-b = int(input('정수를 입력하시오: '))
-c = int(input('정수를 입력하시오: '))
-result = int((a+b+c)/3)
-print('평균은', result)
+sign = input('신호등의 색깔 입력(R, G, Y):',)
+#if sign == 'R' or 'r' #if sign =='R' or True 로 인식해서 아무값 넣어도 다 정지! 나옴
+if sign == 'R' or sign== 'r':
+    print('정지!')
+if sign == 'G' or sign =='g':
+    print('진행~')
+if sign == 'y' or sign== 'Y':
+    print('주의')
